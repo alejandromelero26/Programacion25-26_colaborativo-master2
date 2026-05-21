@@ -1,0 +1,30 @@
+# Liga de fútbol
+
+- Main
+    - instancia una liga
+- Liga
+    - instancia un equipo
+- Equipo
+    - tiene fichajes<>
+    - Alta fichaje
+    - Baja fichaje
+        - por id
+        - por nombre
+    - Modificar fichaje
+        - por id
+        - por nombre
+    - Listar todos los fichajes
+    - Listar por tipo de fichaje
+    - Buscar por
+        - id
+        - nombre
+- Fichaje
+    - id
+    - Nombre
+    - Precio
+    - Clases hijas
+        - Jugador
+            - Dorsal
+            - Posición -> TipoPosicion (enumeración)
+        - Entrenador
+            - tipo -> TipoEntrenador (enumeración)
