@@ -37,23 +37,5 @@ public class FiestaModel implements FiestaModelInterface {
         return null;
     }
 
-    @Override
-    public boolean eliminarInvitado(int id) {
-        Invitado invitado = buscarInvitadoPorId(id);
-        if (invitado == null) {
-            return false;
-        }
 
-        return invitados.remove(invitado);
-    }
-
-    @Override
-    public List<Invitado> getInvitados() {
-        return Collections.unmodifiableList(invitados);
-    }
-
-    @Override
-    public int getTotalInvitados() {
-        return invitados.size();
-    }
 }
